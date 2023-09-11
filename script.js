@@ -3,10 +3,11 @@ let API_URL = "https://jsonplaceholder.typicode.com/comments";
 function CommentHTML(rating, name, email, body)
 {
     return `
-    <h><b>${name}, ${email}</b></h3>
-    ${StarsHTML(rating)}
-    <p>${body}</p>
-    <br>
+    <div class="comment-container">
+        <p><span class="username">${name}</span>, <span class="email"> (${email})</span></p>
+        ${StarsHTML(rating)}
+        <p>${body}</p>
+    </div>
     `
 }
 

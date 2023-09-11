@@ -1,5 +1,36 @@
- /* Estilos para las estrellas */
- .rating {
+body
+{
+    background-color: rgb(228, 220, 211);
+}
+
+.username{
+    font-size: large;
+    font-weight:bold;
+}
+.email
+{
+    font-size: 20;
+    font-weight:lighter;
+}
+.comment-container
+{
+    background-color: rgb(210, 200, 189);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.456);
+    padding: 15px;
+    margin: 15px;
+}
+
+#comment-form
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-inline: auto;
+    background-color: rgb(210, 200, 189);
+    padding: 15px;
+}
+
+.rating {
     font-size: 24px;
     color: gold;
 }
