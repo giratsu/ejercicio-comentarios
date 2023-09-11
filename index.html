@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios y Puntuaciones</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6364c06b65.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Comentarios y Puntuaciones</h1>
+    <div id="comments-container">
+    </div>
+
+    <h2>Agregar un comentario y puntuación:</h2>
+    <form id="comment-form">
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        
+        <label for="rating">Puntuación:</label>
+        <select id="rating" name="rating">
+            <option value="1">1 estrella</option>
+            <option value="2">2 estrellas</option>
+            <option value="3">3 estrellas</option>
+            <option value="4">4 estrellas</option>
+            <option value="5">5 estrellas</option>
+        </select><br>
+
+        <input id="submit" type="submit" value="Agregar comentario">
+    </form>
+
+    
+</body>
+</html>
