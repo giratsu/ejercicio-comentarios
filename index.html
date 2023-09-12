@@ -12,24 +12,48 @@
     <h1>Comentarios y Puntuaciones</h1>
     <div id="comments-container">
     </div>
-
+    
     <form id="comment-form">
         <h2>Agregar un comentario y puntuación:</h2>
         <label for="comment">Comentario:</label>
         <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
         
-        <label for="rating">Puntuación:</label>
-        <select id="rating" name="rating">
-            <option value="1">1 estrella</option>
-            <option value="2">2 estrellas</option>
-            <option value="3">3 estrellas</option>
-            <option value="4">4 estrellas</option>
-            <option value="5">5 estrellas</option>
-        </select><br>
-
+        <div id="star-container">
+            <label class="rating-radio-label">
+                <input type="radio" name="rating" value="1">
+                <div class="icono"></div>
+            </label>
+            
+            <label class="rating-radio-label">
+                <input type="radio" name="rating" value="2">
+                <div class="icono"></div>
+            </label>
+            
+            <label class="rating-radio-label">
+                <input type="radio" name="rating" value="3">
+                <div class="icono"></div>
+            </label>
+            
+            <label class="rating-radio-label">
+                <input type="radio" name="rating" value="4">
+                <div class="icono"></div>
+            </label>
+            
+            <label class="rating-radio-label">
+                <input type="radio" name="rating" value="5">
+                <div class="icono"></div>
+            </label>
+        </div>
+        
+        <label for="username">Nombre</label>
+        <input type="text" id="username">
+        
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        
         <input id="submit" type="submit" value="Agregar comentario">
     </form>
-
+    
     
 </body>
 </html>

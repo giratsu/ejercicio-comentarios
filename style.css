@@ -3,6 +3,12 @@ body
     background-color: rgb(228, 220, 211);
 }
 
+h1
+{
+    margin-left: 15px;
+    text-shadow: 3px 3px 5px rgba(46, 38, 29, 0.528);
+}
+
 .username{
     font-size: large;
     font-weight:bold;
@@ -24,13 +30,45 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-inline: auto;
+    width: 20%;
+    margin-left: 15px;
     background-color: rgb(210, 200, 189);
     padding: 15px;
 }
 
-.rating {
-    font-size: 24px;
-    color: gold;
+#star-container
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-self: center;
+    
+}
+.rating-radio-label
+{
+ margin-right: 5px;   
+}
+.rating-radio-label input[type=radio]
+{
+    display: none;
+}
+.rating-radio-label .icono
+{
+    width: 25px;
+    height: 25px;
+    background-image: url('svg/star-regular.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+.rating-radio-label-filled .icono
+{
+    background-image: url('svg/star-solid.svg');
+    transform:scale(1.2, 1.2);
+}
+
+input[type=text]
+{
+    margin-bottom: 15px;
 }
