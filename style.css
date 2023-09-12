@@ -9,6 +9,11 @@ h1
     text-shadow: 3px 3px 5px rgba(46, 38, 29, 0.528);
 }
 
+textarea
+{
+    resize: vertical;
+}
+
 .username{
     font-size: large;
     font-weight:bold;
@@ -33,6 +38,7 @@ h1
     width: 20%;
     margin-left: 15px;
     background-color: rgb(210, 200, 189);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.456);
     padding: 15px;
 }
 
